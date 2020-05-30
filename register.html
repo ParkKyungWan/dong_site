@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>o3o.kr</title>
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      @font-face { font-family: 'tenbyten'; src: url(/10X10.ttf) format('truetype'); }
+    
+      @font-face { font-family: 'tenbytenB'; src: url(/10X10Bold.ttf) format('truetype'); }
+      #board {
+        box-shadow: -60px 0px 100px -90px #000000,
+        60px 0px 100px -90px #000000;height:auto;
+
+
+      }
+      body {font-family: tenbyten;}
+    </style>
+  </head>
+  <body style="background-color:#dee3eb;">
+    <div class="container-fluid">
+      <div class="container container--naive" >
+        <div class="jumbotron" style="margin-top:15%; background-color:white;" >
+          <div class="container"><h2 style="font-family:tenbytenB">회원가입</h2></div>
+          <br>
+          <div class="container">
+            <div class="container" style="width:50%;float:left;border-right: 1px solid gainsboro;">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:linen; color:black;">안내사항</div>
+                    <div class="panel-body">비밀번호: 15자 이내</div>
+                </div>
+            </div>
+            <div style="width:50%; padding:1%; padding-top:0%;float:right">
+              <form method="POST" class="form-horizontal" action="register.php">
+                <label>이메일</label>
+                <input type="email" class="form-control" placeholder="example@o3o.kr"  name="email" required>
+                <br>
+                <label>비밀번호</label>
+                <input type="password" class="form-control" placeholder="비밀번호" name="pwd"maxlength="15" required>
+                <br>
+                <button type="submit" class="btn btn-default" style="marign-top:2px;float:right;">가입하기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+    <div class="col-sm-4"></div>
+  </body>
+</html>
